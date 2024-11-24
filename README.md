@@ -25,6 +25,15 @@ Please build the `Catsay` Java executable with
 javac Catsay.java
 ```
 
-Initalize the TypeScript environment with `tsc --init`. Then compile with `tsc`.
+Initalize the TypeScript environment and then compile the posting script.
+
+```
+tsc --init
+tsc
+```
+
+## Running
+
+Generate a post through the whole pipeline with `./exec.sh`.
 
 
