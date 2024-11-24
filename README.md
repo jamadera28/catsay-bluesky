@@ -22,3 +22,7 @@ javac Catsay.java
 
 Please make the `BLUESKY_HANDLE` and `BLUESKY_PASSWORD` variables available to your environment.
 
+
+## Issues
+
+It appears that the `atproto` import process requires OpenSSL>=3.0 for some cryptography operations. 
