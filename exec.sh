@@ -1,7 +1,7 @@
 #! /bin/sh
 
 
-until $(fortune -n 50 | java Catsay | python3 post.py); do
+until $(fortune -n 50 | java Catsay | node post.js); do
     echo "Retrying..."
 done
 
