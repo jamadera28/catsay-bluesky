@@ -1,7 +1,7 @@
 # catsay-bluesky
 Catsay bot for Bluesky
 
-## Installation
+## Requirements
 
 Please install the `atproto` pip package.
 
@@ -9,6 +9,10 @@ Please install the `atproto` pip package.
 pip install atproto
 ```
 
+The `fortune` package is required from `apt` by default. Otherwise, please modify the `exec.sh` script to pass any form of standard input to `java Catsay`.
+
+
+## Installation
 
 Please build the `Catsay` Java executable with
 
@@ -16,6 +20,5 @@ Please build the `Catsay` Java executable with
 javac Catsay.java
 ```
 
-
-The `fortune` package is required from `apt` by default. Otherwise, please modify the `exec.sh` script to pass any form of standard input to `java Catsay`.
+Please make the `BLUESKY_HANDLE` and `BLUESKY_PASSWORD` variables available to your environment.
 
