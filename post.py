@@ -1,5 +1,3 @@
-#! /Users/joseph/src/catsay-master/catsay_env/bin/python3
-
 from atproto import Client
 import os
 
@@ -18,9 +16,10 @@ def main():
     print(lines)
     print('Num Chars:', len(lines))
     if len(lines) > 300 or len(lines) == 0:
-        return
-
-    post = client.send_post(lines)
+        return 1
+    else:
+        post = client.send_post(lines)
+        return 0
 
 
 if __name__ == '__main__':
