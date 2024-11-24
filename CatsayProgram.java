@@ -16,7 +16,9 @@ public class CatsayProgram {
 
     private void printCat() {
         tweetStream +=
-            "      \\ ^     /\\\n         )   (   ')\n        (   /    )\njgs    \\(@ ) |";
+            "   ^~^      , \n (' Y ' )   )\n /        \\  / \n( \\ |||  /) hjw";
+        //    "      \\  ^    / \\\n" +"        )    (   ')\n" +"       (   /     )\njgs   \\(___) |";
+        //    "       \\ ^    /\\\n         )   (   ')\n        (   /     )\njgs    \\(@ )  |";
     }
 
     private void printLoop(char c, int cnt) {

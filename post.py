@@ -1,5 +1,6 @@
 from atproto import Client
 import os
+import sys
 
 def main():
     client = Client()
@@ -13,13 +14,13 @@ def main():
             break
         lines += (line + '\n')
 
-    print(lines)
-    print('Num Chars:', len(lines))
+    print(lines, file=sys.stderr)
+    print('Num Chars:', len(lines), file=sys.stderr)
     if len(lines) > 300 or len(lines) == 0:
-        return 1
+        os._exit(1)
     else:
         post = client.send_post(lines)
-        return 0
+        os._exit(0)
 
 
 if __name__ == '__main__':
