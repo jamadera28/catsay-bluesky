@@ -1,3 +1,6 @@
+r"""This posting script is not used because the atproto dependency chain requires OpenSSL>=3
+"""
+
 from atproto import Client
 import os
 import sys
