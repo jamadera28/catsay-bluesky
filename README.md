@@ -18,13 +18,20 @@ Please make the `BLUESKY_HANDLE` and `BLUESKY_PASSWORD` variables available to y
 
 
 ## Installation
+To build the C program which takes the generated text from stdin and print it to stdout plus the cat and the speech `~` characters:
 
+```
+gcc -o catsay add_cat.c
+```
+
+~~
 Please build the `Catsay` Java executable with
 
 ```
 javac Catsay.java
 ```
 
+~~
 Initalize the TypeScript environment and then compile the posting script.
 
 ```
@@ -34,18 +41,6 @@ tsc
 
 ## Running
 
-An example pipelined shell script could look something like this, which lazily expects a future return code from post.js to eventually be 0 if all goes well:
-
-```
-#! /bin/sh
-
-...
-
-until /usr/games/fortune -n 50 | java Catsay | node post.js ; do
-    echo "Retrying..."
-done
-
-echo "Done."
-```
+`exec_safe.sh` implements a shell script to be run over `cron` using pipelined shell programs to generate a fortune, wrap the text to fit within the acceptable number of columns for a BlueSky post, and then add the speech `~`s and the cat.
 
 
