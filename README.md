@@ -28,7 +28,7 @@ gcc -o catsay add_cat.c
 ~~Please build the `Catsay` Java executable with~~
 
 ~~```~~
-~~javac Catsay.java~~
+javac Catsay.java
 ~~```~~
 
 
