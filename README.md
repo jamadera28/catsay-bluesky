@@ -12,7 +12,7 @@ npm i @types/node
 npm i dotenv
 ```
 
-The `fortune` package is required from `apt` by default. Otherwise, please modify the `exec.sh` script to pass any form of standard input to `java Catsay`.
+The `fortune` package is required from `apt` by default. Otherwise, please modify the `exec_safe.sh` script to pass any form of standard input to ~~`java Catsay`~~ ./catsay.
 
 Please make the `BLUESKY_HANDLE` and `BLUESKY_PASSWORD` variables available to your environment.
 
