@@ -15,20 +15,23 @@ process.stdin.on("data", (chunk: Buffer) => {
 });
 
 process.stdin.on("end", () => {
-  //console.log("Collected Input:", body); 
+  console.log("Collected Input:", body);
+  console.log("len:", body.length);
 });
 
 async function main() {
-  if (body.length > 300 || body.length < 10) {
+  if (body.length > 300 ) {
     return 1;
   }
+  
   await agent.login({
     identifier: process.env.BLUESKY_HANDLE!,
     password: process.env.BLUESKY_PASSWORD!,
   });
   await agent.post({
     text: body,
-  });
+  })
+  
   return 0;
 }
 
