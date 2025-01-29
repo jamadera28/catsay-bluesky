@@ -24,14 +24,14 @@ To build the C program which takes the generated text from stdin and print it to
 gcc -o catsay add_cat.c
 ```
 
-~~
-Please build the `Catsay` Java executable with
 
-```
-javac Catsay.java
-```
+~~Please build the `Catsay` Java executable with~~
 
-~~
+~~```~~
+~~javac Catsay.java~~
+~~```~~
+
+
 Initalize the TypeScript environment and then compile the posting script.
 
 ```
