@@ -25,13 +25,11 @@ gcc -o catsay add_cat.c
 ```
 
 
-< s>
-Please build the `Catsay` Java executable with~~
+< pre>< del>Please build the `Catsay` Java executable with~~
 
 ```
 javac Catsay.java
-```
-< /s>
+```< /del>< /pre>
 
 Initalize the TypeScript environment and then compile the posting script.
 
