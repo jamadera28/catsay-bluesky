@@ -34,6 +34,18 @@ tsc
 
 ## Running
 
-Generate a post through the whole pipeline with `./exec.sh`.
+An example pipelined shell script could look something like this, which lazily expects a future return code from post.js to eventually be 0 if all goes well:
+
+```
+#! /bin/sh
+
+...
+
+until /usr/games/fortune -n 50 | java Catsay | node post.js ; do
+    echo "Retrying..."
+done
+
+echo "Done."
+```
 
 
